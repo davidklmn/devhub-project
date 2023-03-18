@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Articles from "../components/pages/Articles";
 import Home from "../components/pages/Home";
 import Jobs from "../components/pages/Jobs";
@@ -9,7 +10,7 @@ import {
   NavItem,
   Container,
   Icon,
-  Link,
+  // Link,
   List,
   ListItem,
   Offcanvas,
@@ -24,22 +25,23 @@ function Navigation() {
   return (
     <div>
       <Nav preset="default">
-        
+
+
         <NavItem>
       
-          <Link href="/">Home</Link>
+          <Link to="/">Home</Link>
         </NavItem>
         <NavItem>
           
-          <Link href="/articles">Articles</Link>
+          <Link to="/articles">Articles</Link>
         </NavItem>
         <NavItem>
           
-          <Link href="/jobs">Jobs</Link>
+          <Link to="/jobs">Jobs</Link>
         </NavItem>
         <NavItem>
           
-          <Link href="/saved">Saved</Link>
+          <Link to="/saved">Saved</Link>
         </NavItem>
       </Nav>
     </div>
