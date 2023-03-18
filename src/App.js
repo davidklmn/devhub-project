@@ -5,11 +5,16 @@ import Navigation from "./components/Navigation";
 import ".././node_modules/uikit/dist/css/uikit.min.css";
 import ".././node_modules/uikit/dist/js/uikit.min.js";
 import ".././node_modules/uikit/dist/js/uikit-icons.min.js";
+import Home from "./components/pages/Home";
+import { BrowserRouter as Router,Route,Switch } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Navigation />;
+      <Navigation />
+      <div>
+        <Home/>
+      </div>
     </div>
   );
 }
