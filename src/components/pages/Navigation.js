@@ -1,12 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Articles from "../components/pages/Articles";
-import Home from "../components/pages/Home";
-import Jobs from "../components/pages/Jobs";
-import Saved from "../components/pages/Saved";
+import Articles from "./Articles";
+import Home from "./Home";
+import Jobs from "./Jobs";
+import Saved from "./Saved";
+import Logo from "../../images/devhublogo.png"
 import {
   Nav,
+  Image,
   NavItem,
   Container,
   Icon,
@@ -24,6 +26,8 @@ import {
 function Navigation() {
   return (
     <div>
+   
+<Image src={Logo} alt="logo" style={{height:150, width:200}}/>
       <Nav preset="default">
 
 

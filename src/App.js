@@ -1,9 +1,10 @@
 import "./App.css";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/pages/Navigation";
 import Articles from "./components/pages/Articles";
 import Home from "./components/pages/Home";
 import Jobs from "./components/pages/Jobs";
 import Saved from "./components/pages/Saved";
+
 //import JSearchAPI from "./components/utils/JSearchAPI";
 //import JobSearch from "./components/JobSearch.js";
 import ".././node_modules/uikit/dist/css/uikit.min.css";
@@ -35,7 +36,6 @@ function App() {
         </div>
       </div>
     </Router>
-
   );
 }
 
