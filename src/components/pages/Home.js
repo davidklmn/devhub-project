@@ -6,7 +6,7 @@ import Articles from "./Articles";
 // import Home from "./Home";
 import Jobs from "./Jobs";
 import Saved from "./Saved";
-import Logo from "../../images/devhublogo.png";
+
 import {
   Nav,
   Image,
@@ -31,8 +31,7 @@ function Home() {
       <Image
         src={LandingPage}
         alt="logo"
-        style={{height:1000, width:2200}}
-
+        style={{ height: 1000, width: 2200 }}
       />
     </div>
   );
