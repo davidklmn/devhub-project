@@ -5,11 +5,12 @@ import Articles from "./Articles";
 import Home from "./Home";
 import Jobs from "./Jobs";
 import Saved from "./Saved";
-import Logo from "../../images/devhublogo.png"
+import Logo from "../../images/devhublogo.png";
 import {
   Nav,
   Image,
   NavItem,
+  NavbarDropdown,
   Container,
   Icon,
   // Link,
@@ -26,28 +27,47 @@ import {
 function Navigation() {
   return (
     <div>
-   
-<Image src={Logo} alt="logo" style={{height:150, width:200}}/>
-      <Nav preset="default">
-
-
+      {/* <Nav preset="default">
         <NavItem>
-      
           <Link to="/">Home</Link>
         </NavItem>
         <NavItem>
-          
           <Link to="/articles">Articles</Link>
         </NavItem>
         <NavItem>
-          
           <Link to="/jobs">Jobs</Link>
         </NavItem>
         <NavItem>
-          
           <Link to="/saved">Saved</Link>
         </NavItem>
-      </Nav>
+      </Nav> */}
+
+      <NavbarSticky>
+        <NavbarContainer>
+          <Navbar left>
+            <NavItem>
+              <Link style={{color:"black",fontSize:30}}>Menu</Link>
+              <NavbarDropdown>
+                <NavItem>
+                  <Link to="/">Home</Link>
+                </NavItem>
+
+                <NavItem>
+                  <Link to="/articles">Articles</Link>
+                </NavItem>
+
+                <NavItem>
+                  <Link to="/jobs">Find Jobs</Link>
+                </NavItem>
+
+                <NavItem>
+                  <Link to="/saved">Saved Jobs</Link>
+                </NavItem>
+              </NavbarDropdown>
+            </NavItem>
+          </Navbar>
+        </NavbarContainer>
+      </NavbarSticky>
     </div>
   );
 }

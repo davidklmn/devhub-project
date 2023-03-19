@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <div>
-        <Navigation />
+        <Navigation/>
         <div>
           <Switch>
             <Route exact path="/">
