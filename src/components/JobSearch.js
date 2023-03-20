@@ -1,35 +1,57 @@
 import React, { useState, useEffect, Component } from 'react';
 import JSearchAPI from './utils/JSearchAPI';
-import JobDetail from './JobDetail';
-import useDebounce from './utils/debounceHook';
+import JobCard from './Jobcard';
 
 function JobSearch() {
+  // * useState variables
   const [query, setQuery] = useState('Web Developer, UK');
-  const [title, setTitle] = useState([]);
-  const [description, setDescription] = useState([]);
+  const [data, setData] = useState();
 
-  const debouncedSearchTerm = useDebounce(query, 500);
+  //*useEffect initialise the page on load
+  useEffect(searchJobs, []);
 
-  useEffect(
-    () => {
-      JSearchAPI.search(query)
-        .then((res) => {
-          setTitle(res.data.data[0].job_title);
-          console.log(res);
-          setDescription(res.data.data[0].job_description);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    },
-    [debouncedSearchTerm],
-    console.log(title)
-  );
+  //* Job search function using api call
+  function searchJobs() {
+    JSearchAPI.search(query)
+      .then((res) => res.json())
+      .then((res) => {
+        setData(res);
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  function handleInputChange(event) {
+    setQuery(event.target.value);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    searchJobs();
+  }
 
   return (
     <div>
-      <h1> jobtitle: {title}</h1>
-      <p>Description: {description}</p>
+      <form onSubmit={handleSubmit}>
+        <input type="text" value={query} onChange={handleInputChange} />
+        <button type="submit">Search</button>
+      </form>
+
+      {data ? (
+        Object.keys(data.data).map((i) => (
+          <JobCard
+            title={data.data[i].job_title}
+            company={data.data[i].employer_name}
+            location={data.data[i].job_city}
+            jobType={data.data[i].job_employment_type}
+            pageLink={data.data[i].job_apply_link}
+          ></JobCard>
+        ))
+      ) : (
+        <p>Loading</p>
+      )}
     </div>
   );
 }
