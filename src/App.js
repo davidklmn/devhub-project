@@ -6,6 +6,8 @@ import '.././node_modules/uikit/dist/css/uikit.min.css';
 import '.././node_modules/uikit/dist/js/uikit.min.js';
 import '.././node_modules/uikit/dist/js/uikit-icons.min.js';
 import Home from './components/pages/Home';
+import { Article } from 'uikit-react';
+import ArticleSearch from './components/ArticleSearch';
 
 function App() {
   return (
@@ -16,7 +18,7 @@ function App() {
     //   </div>
     // </div>
     <div>
-      <JobSearch></JobSearch>
+      <ArticleSearch></ArticleSearch>
     </div>
   );
 }

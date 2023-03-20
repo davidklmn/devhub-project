@@ -5,14 +5,13 @@ function ArticleCard(props) {
   return (
     <Card>
       <CardHeader>
-        <img className="articleCover" src="" alt="" />
         <CardTitle>{props.title}</CardTitle>
         <CardBody>
-          <p>{props.company}</p>
-          <p>{props.location}</p>
-          <p>{props.jobType}</p>
-          <button>Apply now</button>
-          <button>Save</button>
+          <p>{props.author}</p>
+          <p>{props.source}</p>
+          <a href={props.pageLink}>
+            <button>Read Now</button>
+          </a>
         </CardBody>
       </CardHeader>
     </Card>
