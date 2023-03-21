@@ -37,7 +37,7 @@ function JobSearch() {
   }
 
   return (
-    <Container>
+    <Container className="mt-5">
       {/* <form onSubmit={handleSubmit}>
         <input type="text" value={query} onChange={handleInputChange} />
         <button type="submit">Search</button>
@@ -60,6 +60,7 @@ function JobSearch() {
       {data ? (
         Object.keys(data.data).map((i) => (
           <JobCard
+            image={data.data[i].employer_logo}
             title={data.data[i].job_title}
             company={data.data[i].employer_name}
             location={data.data[i].job_city}

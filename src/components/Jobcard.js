@@ -1,22 +1,34 @@
 import React from 'react';
 // import { Card, CardHeader, CardTitle, CardBody } from 'uikit-react';
 import Card from 'react-bootstrap/Card';
-import { Button } from 'react-bootstrap';
+import { Button, Col, Row } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image';
 import './JobCard.css';
 
 function JobCard(props) {
   return (
-    <Card className="d-inline-flex" id="card" style={{ width: '25rem' }}>
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">
-          {props.company}
-        </Card.Subtitle>
-        <Card.Text className="d-inline-flex">{props.location}</Card.Text>
-        <Card.Text className="d-inline-flex">{props.jobType}</Card.Text>
-        <Card.Link id="button" href={props.pageLink}>
-          <Button variant="success">Apply</Button>
-        </Card.Link>
+    <Card className="d-inline-flex" id="jobcard" style={{ width: '25rem' }}>
+      <Card.Body className="d-flex flex-column">
+        <Row>
+          {' '}
+          <Col xs={9}>
+            <Card.Title>{props.title}</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted"></Card.Subtitle>
+            <Card.Text className="d-block mb-0">{props.location}</Card.Text>
+            <Card.Text className="d-block mb-0">{props.company}</Card.Text>
+            <Card.Text className="d-block mb-0">{props.jobType}</Card.Text>
+          </Col>
+          <Col xs={3}>
+            <Button
+              id="button"
+              className="position-absolute bottom-0 mb-3"
+              variant="success"
+              href={props.pageLink}
+            >
+              Apply
+            </Button>
+          </Col>
+        </Row>
       </Card.Body>
     </Card>
   );

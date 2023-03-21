@@ -1,11 +1,11 @@
-#card {
+#jobcard {
   margin-bottom: 1rem;
   margin-right: 1rem;
   height: 10rem;
 }
 
 #button {
-  display: flex;
-  justify-content: end;
-  padding-right: 1rem;
+  display: block;
+  justify-content: center;
+  width: fit-content;
 }
