@@ -1,8 +1,7 @@
 import React from 'react';
-// import { Card, CardHeader, CardTitle, CardBody } from 'uikit-react';
 import Card from 'react-bootstrap/Card';
 import { Button, Col, Row } from 'react-bootstrap';
-import Image from 'react-bootstrap/Image';
+
 import './JobCard.css';
 
 function JobCard(props) {
@@ -26,6 +25,9 @@ function JobCard(props) {
               href={props.pageLink}
             >
               Apply
+            </Button>
+            <Button id="button" variant="success">
+              Save
             </Button>
           </Col>
         </Row>

@@ -38,10 +38,6 @@ function JobSearch() {
 
   return (
     <Container className="mt-5">
-      {/* <form onSubmit={handleSubmit}>
-        <input type="text" value={query} onChange={handleInputChange} />
-        <button type="submit">Search</button>
-      </form> */}
       <Form id="form" className="w-75" onSubmit={handleSubmit}>
         <InputGroup id="input" className="mb-3">
           <Form.Control

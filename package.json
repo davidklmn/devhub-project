@@ -12,6 +12,7 @@
     "react": "^17.0.1",
     "react-bootstrap": "^2.7.2",
     "react-dom": "^17.0.1",
+    "react-icons": "^4.8.0",
     "react-scripts": "5.0.1",
     "Router": "^2.1.0",
     "uikit": "^3.16.7",

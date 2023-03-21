@@ -19,23 +19,32 @@ import {
   Section,
 } from 'uikit-react';
 
+import { BsFillHouseDoorFill } from '../../node_modules/react-icons/bs';
+import { GrArticle } from '../../node_modules/react-icons/gr';
+import { MdOutlineWorkOutline } from '../../node_modules/react-icons/md';
+import { AiFillHeart } from '../../node_modules/react-icons/ai';
+
 function Navigation() {
   return (
     <div>
       <Nav preset="default">
-        <h1 id="logo">
+        <p id="logo">
           <span>Dev</span>Hub
-        </h1>
+        </p>
         <NavItem>
+          <BsFillHouseDoorFill />
           <Link href="/">Home</Link>
         </NavItem>
         <NavItem>
+          <GrArticle />
           <Link href="/articles">Articles</Link>
         </NavItem>
         <NavItem>
+          <MdOutlineWorkOutline />
           <Link href="/jobs">Jobs</Link>
         </NavItem>
         <NavItem>
+          <AiFillHeart />
           <Link href="/saved">Saved</Link>
         </NavItem>
       </Nav>
