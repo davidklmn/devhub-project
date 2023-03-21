@@ -1,8 +1,21 @@
+@font-face {
+  font-family: 'Montserrat-black'; /*Can be any text*/
+  src: local('Montserrat'),
+    url('./components/fonts/static/Montserrat-Black.ttf') format('truetype');
+}
+
+#logo {
+  font-size: 30px;
+}
+
+* {
+  font-family: 'Montserrat-black';
+  background-color: #20364b;
+  color: azure;
+}
+
 body {
   margin: 0;
-  font-family: Genos, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
