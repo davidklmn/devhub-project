@@ -1,0 +1,31 @@
+#logo span {
+  color: #fdc021;
+}
+#main-container {
+  height: 400px;
+}
+
+#content {
+  margin-top: 3rem;
+}
+#hero {
+  height: 200px;
+}
+
+#hero h1 {
+  font-size: 60px;
+}
+
+#secondaryHero {
+  margin-top: 5rem;
+}
+
+#hero Button {
+  background-color: #fdc021;
+  border-color: #fdc021;
+  margin-left: 1rem;
+  color: #20364b;
+}
+
+/* Background: #20364B */
+/* Accent: #20364B */

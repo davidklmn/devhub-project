@@ -1,14 +1,15 @@
 import React from 'react';
-import Articles from '../components/pages/Articles';
-import Home from '../components/pages/Home';
-import Jobs from '../components/pages/Jobs';
-import Saved from '../components/pages/Saved';
+import Article from '../components/ArticleSearch';
+import Home from './Home';
+import Jobs from '../components/JobSearch';
+import { Link } from 'react-router-dom';
+
 import {
   Nav,
   NavItem,
   Container,
   Icon,
-  Link,
+  // Link,
   List,
   ListItem,
   Offcanvas,
@@ -33,19 +34,15 @@ function Navigation() {
         </p>
         <NavItem>
           <BsFillHouseDoorFill />
-          <Link href="/">Home</Link>
+          <Link to="/home">Home</Link>
         </NavItem>
         <NavItem>
           <HiNewspaper />
-          <Link href="/articles">Articles</Link>
+          <Link to="/articleSearch">Articles</Link>
         </NavItem>
         <NavItem>
           <MdWork />
-          <Link href="/jobs">Jobs</Link>
-        </NavItem>
-        <NavItem>
-          <AiFillHeart />
-          <Link href="/saved">Saved</Link>
+          <Link to="/jobSearch">Jobs</Link>
         </NavItem>
       </Nav>
     </div>
