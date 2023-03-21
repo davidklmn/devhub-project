@@ -20,8 +20,8 @@ import {
 } from 'uikit-react';
 
 import { BsFillHouseDoorFill } from '../../node_modules/react-icons/bs';
-import { GrArticle } from '../../node_modules/react-icons/gr';
-import { MdOutlineWorkOutline } from '../../node_modules/react-icons/md';
+import { HiNewspaper } from '../../node_modules/react-icons/hi';
+import { MdWork } from '../../node_modules/react-icons/md';
 import { AiFillHeart } from '../../node_modules/react-icons/ai';
 
 function Navigation() {
@@ -36,11 +36,11 @@ function Navigation() {
           <Link href="/">Home</Link>
         </NavItem>
         <NavItem>
-          <GrArticle />
+          <HiNewspaper />
           <Link href="/articles">Articles</Link>
         </NavItem>
         <NavItem>
-          <MdOutlineWorkOutline />
+          <MdWork />
           <Link href="/jobs">Jobs</Link>
         </NavItem>
         <NavItem>
