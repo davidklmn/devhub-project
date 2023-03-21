@@ -1,0 +1,11 @@
+#card {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  height: 10rem;
+}
+
+#link {
+  display: flex;
+  justify-content: end;
+  padding-right: 1rem;
+}

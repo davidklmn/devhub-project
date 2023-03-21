@@ -1,5 +1,4 @@
 import React from 'react';
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Articles from '../components/pages/Articles';
 import Home from '../components/pages/Home';
 import Jobs from '../components/pages/Jobs';
@@ -24,6 +23,9 @@ function Navigation() {
   return (
     <div>
       <Nav preset="default">
+        <h1 id="logo">
+          <span>Dev</span>Hub
+        </h1>
         <NavItem>
           <Link href="/">Home</Link>
         </NavItem>

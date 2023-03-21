@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import NewsAPI from './utils/NewsAPI';
 import ArticleCard from './ArticleCard';
+import { Container, Stack } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 function ArticleSearch() {
   // * useState variables
@@ -33,11 +37,21 @@ function ArticleSearch() {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={query} onChange={handleInputChange} />
-        <button type="submit">Search</button>
-      </form>
+    <Container className="mt-5">
+      <Form id="form" className="w-75" onSubmit={handleSubmit}>
+        <InputGroup id="input" className="mb-3">
+          <Form.Control
+            type="search"
+            value={query}
+            onChange={handleInputChange}
+            placeholder={query}
+            aria-describedby="basic-addon2"
+          />
+          <Button type="submit" variant="outline-secondary" id="button-addon2">
+            Search
+          </Button>
+        </InputGroup>
+      </Form>
 
       {data ? (
         Object.keys(data.articles).map((i) => (
@@ -50,7 +64,7 @@ function ArticleSearch() {
       ) : (
         <p>Loading</p>
       )}
-    </div>
+    </Container>
   );
 }
 

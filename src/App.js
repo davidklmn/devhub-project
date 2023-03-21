@@ -1,25 +1,23 @@
 import './App.css';
 import Navigation from './components/Navigation';
-import JSearchAPI from './components/utils/JSearchAPI';
 import JobSearch from './components/JobSearch.js';
-import '.././node_modules/uikit/dist/css/uikit.min.css';
-import '.././node_modules/uikit/dist/js/uikit.min.js';
-import '.././node_modules/uikit/dist/js/uikit-icons.min.js';
 import Home from './components/pages/Home';
-import { Article } from 'uikit-react';
+import Articles from './components/pages/Articles';
 import ArticleSearch from './components/ArticleSearch';
+import { Container, Col, Row } from 'react-bootstrap';
 
 function App() {
   return (
-    // <div>
-    //   <Navigation />
-    //   <div>
-    //     <Home />
-    //   </div>
-    // </div>
-    <div>
-      <ArticleSearch></ArticleSearch>
-    </div>
+    <Container fluid>
+      <Row>
+        <Col xs={2} id="sidebar-wrapper">
+          <Navigation />
+        </Col>
+        <Col xs={8} id="page-content-wrapper">
+          <JobSearch></JobSearch>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
