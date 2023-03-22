@@ -1,6 +1,6 @@
 # <span style="color:yellow">DEV</span>HUB
 
-[Checkout the app](https://devhub-project.netlify.app)
+Checkout the app [here](https://devhub-project.netlify.app)
 
 # Description
 
