@@ -2,9 +2,7 @@
 
 # Description
 
-This app was created for the purpose of finding the best job possible as well as staying up to date with the lated trends in the industry.
-
-The app allow you to find jobs as per your criteria and apply for those jobs on the employer site.
+DevHub is a comprehensive app designed specifically for web developers seeking job opportunities and staying up-to-date with the latest trends and technologies in web development. With its user-friendly interface and powerful search capabilities, DevHub makes it easy for developers to find job postings that match their skills and interests, while also providing a wealth of valuable information and resources.
 
 As a feature development the app will have the feature of saving the favorite jobs in your list and share jobs with your friends.
 
