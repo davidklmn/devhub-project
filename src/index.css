@@ -75,6 +75,19 @@ a.nav-link:focus {
   background-color: #20364b;
 }
 
+#footer {
+  justify-content: center;
+  background-color: #121f2b;
+}
+#footer h6 {
+  background-color: #121f2b;
+}
+#footer h6 a {
+  background-color: #121f2b;
+  text-decoration: none;
+  color: #fdc021;
+}
+
 @media only screen and (max-width: 1000px) {
   #logo {
     font-size: 20px;

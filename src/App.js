@@ -10,6 +10,7 @@ import {
   Switch,
   Redirect,
 } from 'react-router-dom';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             </Col>
           </Route>
         </Switch>
+        <Footer />
       </Row>
     </Router>
   );
