@@ -21,7 +21,7 @@ function App() {
         </Col>
         <Redirect to="/home" />
         <Switch>
-          <Route exact path="/home">
+          <Route path="/home">
             <Col xs={9}>
               <Home />
             </Col>
