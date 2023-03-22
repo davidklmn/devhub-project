@@ -54,11 +54,12 @@ function ArticleSearch() {
       </Form>
 
       {data ? (
-        Object.keys(data.articles).map((i) => (
+        Object.keys(data.articles).map((i, key) => (
           <ArticleCard
             title={data.articles[i].title}
             source={data.articles[i].source.Name}
             pageLink={data.articles[i].url}
+            key={key}
           ></ArticleCard>
         ))
       ) : (

@@ -59,7 +59,7 @@ function JobSearch() {
       </Form>
 
       {data ? (
-        Object.keys(data.data).map((i) => (
+        Object.keys(data.data).map((i, key) => (
           <JobCard
             image={data.data[i].employer_logo}
             title={data.data[i].job_title}
@@ -67,6 +67,7 @@ function JobSearch() {
             location={data.data[i].job_city}
             jobType={data.data[i].job_employment_type}
             pageLink={data.data[i].job_apply_link}
+            key={key}
           ></JobCard>
         ))
       ) : (
