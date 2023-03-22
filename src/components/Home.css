@@ -1,3 +1,7 @@
+#main-container {
+  margin-top: 100px;
+}
+
 #logo span {
   color: #fdc021;
 }
@@ -25,6 +29,18 @@
   border-color: #fdc021;
   margin-left: 1rem;
   color: #20364b;
+  transition: 0.5s;
+}
+
+#hero Button:hover {
+  background-color: #20364b;
+  color: #fdc021;
+}
+
+#hero Button a {
+  color: #20364b;
+  text-decoration: none;
+  background-color: #fdc021;
 }
 
 /* Background: #20364B */

@@ -4,7 +4,11 @@ import './ArticleCard.css';
 
 function ArticleCard(props) {
   return (
-    <Card className="d-inline-flex" id="card" style={{ width: '25rem' }}>
+    <Card
+      className="d-inline-flex border border-2 rounded-1"
+      id="card"
+      style={{ width: '25rem' }}
+    >
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">

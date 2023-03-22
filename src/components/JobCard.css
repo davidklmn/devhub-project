@@ -9,3 +9,22 @@
   justify-content: center;
   width: fit-content;
 }
+
+Col .jobButton {
+  background-color: #fdc021;
+  border-color: #fdc021;
+
+  color: #20364b;
+  transition: 0.5s;
+}
+
+Col .jobButton:hover {
+  background-color: #20364b;
+  color: #fdc021;
+}
+
+Col .jobButton a {
+  color: #20364b;
+  text-decoration: none;
+  background-color: #fdc021;
+}

@@ -24,3 +24,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a.nav-link {
+  text-decoration: none;
+  color: azure;
+}
+a.nav-link:active {
+  text-decoration: none;
+  color: #fdc021 !important;
+}
+a.nav-link:hover {
+  color: #fdc021;
+}
+
+a.nav-link:focus {
+  color: #fdc021;
+}
+
+#button-addon2 {
+  color: #fdc021;
+  border-color: #fdc021;
+}
+#button-addon2:hover {
+  color: #20364b;
+  border-color: #fdc021;
+  background-color: #fdc021;
+}
+
+#email {
+  font-size: 30px;
+  transition: 0.5s;
+}
+#email:hover {
+  font-size: 40px;
+}
+
+#jobButtons {
+  display: flex;
+  justify-content: end;
+}
+
+#jobButton {
+  color: #20364b;
+  border-color: #20364b;
+  background-color: #fdc021;
+}
+#jobButton:hover {
+  color: #fdc021;
+  border-color: #fdc021;
+  background-color: #20364b;
+}
+
+@media only screen and (max-width: 1000px) {
+  #logo {
+    font-size: 20px;
+  }
+  #main-container {
+    margin-top: 50px;
+  }
+}

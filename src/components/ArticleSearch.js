@@ -62,7 +62,9 @@ function ArticleSearch() {
           ></ArticleCard>
         ))
       ) : (
-        <p>Loading</p>
+        <div class="spinner-border text-warning" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
       )}
     </Container>
   );
