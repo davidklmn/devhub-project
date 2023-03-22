@@ -34,6 +34,7 @@ As a feature development the app will have the feature of saving the favorite jo
 * News API
 * React Bootstrap
 * React-Dom-Router
+* React-Icons
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
