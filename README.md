@@ -1,4 +1,4 @@
-# [<span style="color:yellow">DEV</span>HUB](https://devhub-project.netlify.app/jobSearch)
+# [DEVHUB](https://devhub-project.netlify.app/jobSearch)
 
 # Description
 
