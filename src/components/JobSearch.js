@@ -12,7 +12,12 @@ function JobSearch() {
   const [data, setData] = useState();
 
   //*useEffect initialise the page on load
-  useEffect(searchJobs, []);
+  useEffect(() => {
+    searchJobs();
+    return () => {
+      setData({});
+    };
+  }, []);
 
   //* Job search function using api call
   function searchJobs() {
@@ -65,8 +70,8 @@ function JobSearch() {
           ></JobCard>
         ))
       ) : (
-        <div class="spinner-border text-warning" role="status">
-          <span class="visually-hidden">Loading...</span>
+        <div className="spinner-border text-warning" role="status">
+          <span className="visually-hidden">Loading...</span>
         </div>
       )}
     </Container>
